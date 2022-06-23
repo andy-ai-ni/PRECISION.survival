@@ -40,6 +40,7 @@ data_simulation=function(be.surv.data, he.data, nonzero_beta_position, b0value, 
   x=as.matrix(be.PFS2[,4:ncol(be.PFS2)])
   p=ncol(x)
   n=nrow(x)
+  n_test=n
   b0=rep(0,p)
   b0[nonzero_beta_position]=b0value
   xb=x%*%b0
